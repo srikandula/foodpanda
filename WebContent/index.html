@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Food Panda</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/smooth-jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/jquery-ui.min.js"></script>
+	<script	src="js/lib/bootstrap.min.js"></script>
+	
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+	<script src="js/lib/angular-resource.min.js"></script>
+	
+	<script src="js/module/module.js"></script>
+	<script src="js/controller/baseController.js"></script>
+	<script src="js/controller/tabController.js"></script>
+	<script src="js/controller/pizzaHutController.js"></script>
+	<script src="js/controller/chutneysController.js"></script>
+	<script src="js/controller/mainlandChinaController.js"></script>
+	<script src="js/controller/dominosController.js"></script>
+	
+	<script src="js/service/currentTabSelectedService.js"></script>
+	<script src="js/service/pizzaHutService.js"></script>
+	<script src="js/service/chutneysService.js"></script>	
+	<script src="js/service/mainlandChinaService.js"></script>
+	<script src="js/service/dominosService.js"></script>
+	<script src="js/service/dataHolderService.js"></script>	
+
+</head>
+<body  ng-app="fpModule" ng-controller="baseController" ng-init="initialise();">
+	  <div ng-view></div>
+</body>
+
+</html>

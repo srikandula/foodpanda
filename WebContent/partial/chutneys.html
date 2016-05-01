@@ -1,0 +1,32 @@
+<div class="row" ng-controller="chutneysController" ng-init="loadMenu()">
+	<div>&nbsp;</div>
+	<div>&nbsp;</div>
+	<div>&nbsp;</div>
+	<div>
+		<h2>Welcome to Chutneys</h2>
+	</div>
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>Items</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="menuType in menuList">
+				<tr>
+					<td>{{menuType.MenuName}}</td>
+					<td>
+							<table class="table">
+								<tbody ng-repeat="menuItem in menuType.MenuItemList">
+									<td>{{menuItem.ItemName}}</td>
+									<td>{{menuItem.Description}}</td>
+									<td>{{menuItem.Cost}}</td>
+								</tbody>
+							</table>					
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
